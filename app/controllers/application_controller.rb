@@ -4,10 +4,7 @@ class ApplicationController < ActionController::Base
     current_user
   end
 
-  def forem_name
-    email
-  end
-  helper_method :forem_user, :forem_name
+  helper_method :forem_user
 
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
