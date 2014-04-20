@@ -1,0 +1,29 @@
+.flash_warning {
+  color: #8a6d3b; /* @include text-warning; */
+}
+.flash_alert {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding:10px;
+}
+
+.flash_notice { /* this is really success */
+  padding: 10px;
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.t-create-post{
+  margin: 15px 0;
+}
+
+a.navbar-brand {
+  border-right: 1px solid darken(#ccc, 50%);
+  background-color: #333;
+}
+
+.posts-list{
+  margin: 12px 0;
+}
