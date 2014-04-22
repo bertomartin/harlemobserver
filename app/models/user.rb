@@ -8,6 +8,6 @@ class User < ActiveRecord::Base
   validates :username, uniqueness: true, if: -> { self.username.present? }
 
   def forem_name
-    email
+    username
   end
 end
