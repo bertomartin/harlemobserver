@@ -1,10 +1,13 @@
-= render :partial => 'forem/forums/head', :locals => { :forum => @topic.forum }
-%h2
+/ # = render :partial => 'forem/forums/head', :locals => { :forum => @topic.forum }
+/ # = params.inspect
+/ # = link_to "Back to discussion", forem.forum_topic_post_path(params[:forum_id], params[:topic_id], params[:topic_id]), :class => "btn btn-default"
+= link_to "Back to discussion", request.env['HTTP_REFERER'], :class => "btn btn-default"
+%h4
   = t("forem.post.new")
-  - if @reply_to_post
-    = render 'reply_to_post', :post => @reply_to_post
-  - else
-    %em= @topic.subject
+- if @reply_to_post
+  = render 'reply_to_post', :post => @reply_to_post
+- else
+  %em= @topic.subject
 = simple_form_for [forem, @topic.forum, @topic, @post] do |f|
   = render :partial => "form", :locals => { :f => f }
   = f.submit t("forem.post.buttons.reply"), :class => "btn btn-primary"

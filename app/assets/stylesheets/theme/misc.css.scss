@@ -34,6 +34,21 @@ a.navbar-brand {
   margin: 12px 0;
 }
 
+.reply-quote {
+  display: block;
+  margin: 10px 0;
+}
+.post-your-message {
+  text-align: right;
+}
+
+.alert-notice {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  padding:10px;
+}
+
 /* fonts */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
 @import url("http://fonts.googleapis.com/css?family=Dosis:400,700")
