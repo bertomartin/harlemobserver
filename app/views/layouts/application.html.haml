@@ -40,11 +40,24 @@
                 = link_to 'Login', main_app.new_user_session_path
 
     .container
+      .row
+        .col-md-8.col-xs-12
+          - flash.each do |name, msg|
+            = content_tag :div, msg, class: "alert-#{name}"
 
-      - flash.each do |name, msg|
-        = content_tag :div, msg, class: "alert-#{name}"
+          = yield
+        .col-md-4.hidden-xs
+          .panel.panel-info
+            .panel-heading
+              .panel-title
+                Welcome to HarlemVoice
+            .panel-body
+              %p
+                This forum is intended to give you a voice to state your opinion, to ask questions and explore opportunities. Please keep it civil but don't be afraid to speak your mind.
+              %p
+                Please direct any questions to
+                %span.text-primary harlemvoice125@gmail.com
 
-      = yield
 
     = javascript_include_tag 'application'
 
