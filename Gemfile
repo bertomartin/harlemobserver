@@ -66,7 +66,7 @@ group :development do
   gem 'capistrano', '~> 2.15.4'
 end
 
-gem 'figaro'
+# gem 'figaro'
 
 
 # Use debugger
