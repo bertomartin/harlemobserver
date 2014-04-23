@@ -89,7 +89,6 @@ Harlemobserver::Application.configure do
     user_name: CONFIG[:GMAIL_USERNAME],
     password: CONFIG[:GMAIL_PASSWORD]
   }
-  debugger
 
   config.action_mailer.default_url_options = { host: 'harlemobserver.com' }
 end
