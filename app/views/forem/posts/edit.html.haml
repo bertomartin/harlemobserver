@@ -1,4 +1,5 @@
 / # = render :partial => 'forem/forums/head', :locals => { :forum => @topic.forum }
+= link_to "Back", request.env['HTTP_REFERER'], :class => "btn btn-default"
 %h2= t("forem.post.edit", :post => @post)
 = simple_form_for [forem, @topic.forum, @topic, @post] do |f|
   = render :partial => "form", :locals => { :f => f }
