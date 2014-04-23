@@ -24,6 +24,13 @@
 #   pool: 5
 #   timeout: 5000
 
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: harlemobserver_prod
+  pool: 5
+  username: roberto
+
 development:
   adapter: postgresql
   encoding: unicode
@@ -37,7 +44,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: reggaetees
+  database: harlemobserver
   pool: 5
   username: roberto
 
