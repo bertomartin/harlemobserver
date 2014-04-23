@@ -15,5 +15,5 @@
     %div.form-group
       = f.label :password_confirmation
       = f.password_field :password_confirmation, :class => 'form-control', autocomplete: "off"
-    %div.form-group= f.submit "Sign up", :class => ""
+    %div.form-group= f.submit "Sign up", :class => "btn btn-primary"
   = render "devise/shared/links"
