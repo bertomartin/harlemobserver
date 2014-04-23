@@ -86,8 +86,8 @@ Harlemobserver::Application.configure do
     domain: "harlemobserver.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"]
+    user_name: Figaro.env.GMAIL_USERNAME,
+    password: Figaro.env.GMAIL_PASSWORD
   }
 
   config.action_mailer.default_url_options = { host: 'harlemobserver.com' }
